@@ -2,7 +2,7 @@
 
 1. create a Dockerfile
 1. open the Dockerfile
-1. add a FROM statement with a base image
+1. add a FROM statement with a [base image](https://docs.docker.com/userguide/dockerimages/)
 1. add a RUN statement for running whatever setup commands are needed
 1. add any additional RUN statements necessary
 1. add a COPY statement for copying stuff over from the local filesystem
@@ -16,7 +16,7 @@ that:
     docker pull debian:latest
     docker run -t -i debian:latest /bin/bash
 
-If you want to generate a docker image based off of what you did in the interactive session
+If you want to generate a docker image based off of what you did in the [interactive session](https://docs.docker.com/userguide/dockerimages/#updating-and-committing-an-image)
 vs a Dockerfile, you can take note of the image id in the console after root. E.g.
 `root@28934273 #` specifies the user is root and the image id is 28934273. Then, you can 
 run whatever commands you'd like, exit the session, and run the following:
@@ -40,3 +40,8 @@ statements to actually run your software.
 This is basically just for my personal notes. I wanted to play around with Docker a bit
 and this is a first step. The docs are a little scattered, so I wanted a simple place
 with very simple instructions.
+
+Documentation pulled from:
+* https://docs.docker.com/articles/baseimages/
+* https://docs.docker.com/userguide/dockerimages/
+* https://docs.docker.com/articles/dockerfile_best-practices/
