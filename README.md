@@ -1,5 +1,9 @@
 # Building a docker image from scratch
 
+This assumes that you have a working docker environment already set up.
+
+Here are the really simple instructions:
+
 1. create a Dockerfile
 1. open the Dockerfile
 1. add a FROM statement with a [base image](https://docs.docker.com/userguide/dockerimages/)
